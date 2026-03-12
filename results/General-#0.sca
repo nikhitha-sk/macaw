@@ -1,8 +1,8 @@
 version 3
-run General-0-20260312-07:04:47-198246
+run General-0-20260312-07:06:13-200699
 attr configname General
-attr datetime 20260312-07:04:47
-attr datetimef 20260312-070447
+attr datetime 20260312-07:06:13
+attr datetimef 20260312-070613
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
@@ -10,14 +10,14 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network MacawNetwork
-attr processid 198246
+attr processid 200699
 attr repetition 0
 attr replication #0
 attr resultdir results
 attr runnumber 0
 attr seedset 0
 config network MacawNetwork
-config sim-time-limit 20s
+config sim-time-limit 100s
 
 par MacawNetwork.node[0] typename "\"MacawNode\""
 par MacawNetwork.node[1] typename "\"MacawNode\""
