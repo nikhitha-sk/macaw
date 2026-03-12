@@ -1,6 +1,6 @@
 simple MacawNode
 {
     gates:
-        input in;
-        output out;
+        input in[2];
+        output out[2];
 }
