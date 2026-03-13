@@ -1,0 +1,336 @@
+SB ov 1539 ev 2 rid SlowAnim-0-20260313-06:24:26-53409
+
+E # 0 t 0 m 1 ce -1 msg -1
+MC id 1 c omnetpp::cModule t MacawNetwork n MacawNetwork cm 1
+MDC id 1 d bgb=640,480
+MC id 2 c MacawNode t MacawNode pid 1 n A
+MDC id 2 d "t=A Sender;is=l;p=155,240;i=device/laptop"
+MC id 3 c MacawNode t MacawNode pid 1 n B
+MDC id 3 d "t=B Receiver;is=l;p=465,240;i=device/laptop"
+MC id 4 c MacawNode t MacawNode pid 1 n C
+MDC id 4 d "t=C Neighbor;p=50,390;i=device/pc"
+MC id 5 c MacawNode t MacawNode pid 1 n E
+MDC id 5 d "t=E Neighbor;p=50,80;i=device/pc"
+MC id 6 c MacawNode t MacawNode pid 1 n D
+MDC id 6 d "t=D Neighbor;p=570,80;i=device/pc"
+MC id 7 c MacawNode t MacawNode pid 1 n F
+MDC id 7 d "t=F Neighbor;p=570,390;i=device/pc"
+GC m 2 g 1048576 n wireless$i i 0 o 0
+GC m 2 g 1572864 n wireless$o i 0 o 1
+GC m 3 g 1048576 n wireless$i i 0 o 0
+GC m 3 g 1572864 n wireless$o i 0 o 1
+CC sm 2 sg 1572864 dm 3 dg 1048576
+CDC sm 2 sg 1572864 d ""
+CC sm 3 sg 1572864 dm 2 dg 1048576
+CDC sm 3 sg 1572864 d ""
+GC m 2 g 1048577 n wireless$i i 1 o 0
+GC m 2 g 1572865 n wireless$o i 1 o 1
+GC m 4 g 1048576 n wireless$i i 0 o 0
+GC m 4 g 1572864 n wireless$o i 0 o 1
+CC sm 2 sg 1572865 dm 4 dg 1048576
+CDC sm 2 sg 1572865 d ""
+CC sm 4 sg 1572864 dm 2 dg 1048577
+CDC sm 4 sg 1572864 d ""
+GC m 2 g 1048578 n wireless$i i 2 o 0
+GC m 2 g 1572866 n wireless$o i 2 o 1
+GC m 5 g 1048576 n wireless$i i 0 o 0
+GC m 5 g 1572864 n wireless$o i 0 o 1
+CC sm 2 sg 1572866 dm 5 dg 1048576
+CDC sm 2 sg 1572866 d ""
+CC sm 5 sg 1572864 dm 2 dg 1048578
+CDC sm 5 sg 1572864 d ""
+GC m 3 g 1048577 n wireless$i i 1 o 0
+GC m 3 g 1572865 n wireless$o i 1 o 1
+GC m 6 g 1048576 n wireless$i i 0 o 0
+GC m 6 g 1572864 n wireless$o i 0 o 1
+CC sm 3 sg 1572865 dm 6 dg 1048576
+CDC sm 3 sg 1572865 d ""
+CC sm 6 sg 1572864 dm 3 dg 1048577
+CDC sm 6 sg 1572864 d ""
+GC m 3 g 1048578 n wireless$i i 2 o 0
+GC m 3 g 1572866 n wireless$o i 2 o 1
+GC m 7 g 1048576 n wireless$i i 0 o 0
+GC m 7 g 1572864 n wireless$o i 0 o 1
+CC sm 3 sg 1572866 dm 7 dg 1048576
+CDC sm 3 sg 1572866 d ""
+CC sm 7 sg 1572864 dm 3 dg 1048578
+CDC sm 7 sg 1572864 d ""
+CMB sm 1 tm 2 m initialize(0)
+- INFO: [A] role=sender  initialized
+CM id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n send-RTS k 100 pe -1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n send-RTS k 100 sm 2 st 0 am 2 at 1 pe 0
+ES id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n send-RTS k 100 sm 2 st 0 am 2 at 1 pe 0
+MDC id 2 d t=Waiting...;is=l;p=155,240;i=device/laptop
+MDC id 2 d t=Waiting...,,#ffffff;is=l;p=155,240;i=device/laptop
+MDC id 2 d b=,,,,#2b2f5a;t=Waiting...,,#ffffff;is=l;p=155,240;i=device/laptop
+CME
+CMB sm 1 tm 3 m initialize(0)
+- INFO: [B] role=receiver  initialized
+MDC id 3 d t=Listening;is=l;p=465,240;i=device/laptop
+MDC id 3 d t=Listening,,#ffffff;is=l;p=465,240;i=device/laptop
+MDC id 3 d b=,,,,#1a3a5c;t=Listening,,#ffffff;is=l;p=465,240;i=device/laptop
+CME
+CMB sm 1 tm 4 m initialize(0)
+- INFO: [C] role=neighbor  initialized
+MDC id 4 d t=Idle;p=50,390;i=device/pc
+MDC id 4 d t=Idle,,#ffffff;p=50,390;i=device/pc
+MDC id 4 d b=,,,,#2d3d6a;t=Idle,,#ffffff;p=50,390;i=device/pc
+CME
+CMB sm 1 tm 5 m initialize(0)
+- INFO: [E] role=neighbor  initialized
+MDC id 5 d t=Idle;p=50,80;i=device/pc
+MDC id 5 d t=Idle,,#ffffff;p=50,80;i=device/pc
+MDC id 5 d b=,,,,#2d3d6a;t=Idle,,#ffffff;p=50,80;i=device/pc
+CME
+CMB sm 1 tm 6 m initialize(0)
+- INFO: [D] role=neighbor  initialized
+MDC id 6 d t=Idle;p=570,80;i=device/pc
+MDC id 6 d t=Idle,,#ffffff;p=570,80;i=device/pc
+MDC id 6 d b=,,,,#2d3d6a;t=Idle,,#ffffff;p=570,80;i=device/pc
+CME
+CMB sm 1 tm 7 m initialize(0)
+- INFO: [F] role=neighbor  initialized
+MDC id 7 d t=Idle;p=570,390;i=device/pc
+MDC id 7 d t=Idle,,#ffffff;p=570,390;i=device/pc
+MDC id 7 d b=,,,,#2d3d6a;t=Idle,,#ffffff;p=570,390;i=device/pc
+CME
+
+E # 1 t 1 m 2 ce 0 msg 0
+DM id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n send-RTS k 100 m 2 pe 1
+- INFO: 
+- INFO: ========================================
+- INFO:   STEP 1/5 :  RTS (Request To Send)
+- INFO:   A --[RTS]--> B + {C,E}
+- INFO:   Time = 1
+- INFO: ========================================
+- INFO: 
+BU id 2 txt "RTS (Request To Send)"
+MDC id 2 d "b=,,,,#2b2f5a;t=Sending RTS,,#ffffff;is=l;p=155,240;i=device/laptop"
+MDC id 2 d "b=,,,,#1a5c8a;t=Sending RTS,,#ffffff;is=l;p=155,240;i=device/laptop"
+- INFO: [A] Broadcasting RTS  bytes=50  gates=3
+CM id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n RTS k 1 pe -1
+BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n RTS k 1 m 2 pe 1
+SH sm 2 sg 1572864 pd 0.001
+ES id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n RTS k 1 sm 2 sg 1572864 st 1 am 3 ag 1048576 at 1.001 pe 1
+CL id 2 tid 1 eid 2 etid 1 c omnetpp::cMessage n RTS k 1 m 2 pe -1 cid 1
+CM id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n RTS k 1 pe -1
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n RTS k 1 m 2 pe 1
+SH sm 2 sg 1572865 pd 0.001
+ES id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n RTS k 1 sm 2 sg 1572865 st 1 am 4 ag 1048576 at 1.001 pe 1
+CL id 3 tid 2 eid 3 etid 2 c omnetpp::cMessage n RTS k 1 m 2 pe -1 cid 2
+CM id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n RTS k 1 pe -1
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n RTS k 1 m 2 pe 1
+SH sm 2 sg 1572866 pd 0.001
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n RTS k 1 sm 2 sg 1572866 st 1 am 5 ag 1048576 at 1.001 pe 1
+CL id 4 tid 3 eid 4 etid 3 c omnetpp::cMessage n RTS k 1 m 2 pe -1 cid 3
+
+E # 2 t 1.001 m 3 ce 1 msg 1
+- INFO: [B] RECV RTS from A  bytes=50
+DM id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n RTS k 1 m 3 pe 2
+- INFO: [B] RTS received → scheduling CTS
+MDC id 3 d "b=,,,,#1a3a5c;t=Got RTS,,#ffffff;is=l;p=465,240;i=device/laptop"
+MDC id 3 d "b=,,,,#1a5c3a;t=Got RTS,,#ffffff;is=l;p=465,240;i=device/laptop"
+CM id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n send-CTS k 103 pe -1
+BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n send-CTS k 103 sm 3 st 1.001 am 3 at 1.051 pe 2
+ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n send-CTS k 103 sm 3 st 1.001 am 3 at 1.051 pe 2
+
+E # 3 t 1.001 m 4 ce 1 msg 2
+- INFO: [C] RECV RTS from A  bytes=50
+DM id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n RTS k 1 m 4 pe 3
+- INFO: [C] NAV SET for 0.5s
+MDC id 4 d "b=,,,,#2d3d6a;t=NAV SET,,#ffffff;p=50,390;i=device/pc"
+MDC id 4 d "b=,,,,#c41414;t=NAV SET,,#ffffff;p=50,390;i=device/pc"
+CM id 5 tid 5 eid 5 etid 5 c omnetpp::cMessage n nav-clear k 105 pe -1
+BS id 5 tid 5 eid 5 etid 5 c omnetpp::cMessage n nav-clear k 105 sm 4 st 1.001 am 4 at 1.501 pe 3
+ES id 5 tid 5 eid 5 etid 5 c omnetpp::cMessage n nav-clear k 105 sm 4 st 1.001 am 4 at 1.501 pe 3
+
+E # 4 t 1.001 m 5 ce 1 msg 3
+- INFO: [E] RECV RTS from A  bytes=50
+DM id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n RTS k 1 m 5 pe 4
+- INFO: [E] NAV SET for 0.5s
+MDC id 5 d "b=,,,,#2d3d6a;t=NAV SET,,#ffffff;p=50,80;i=device/pc"
+MDC id 5 d "b=,,,,#c41414;t=NAV SET,,#ffffff;p=50,80;i=device/pc"
+CM id 6 tid 6 eid 6 etid 6 c omnetpp::cMessage n nav-clear k 105 pe -1
+BS id 6 tid 6 eid 6 etid 6 c omnetpp::cMessage n nav-clear k 105 sm 5 st 1.001 am 5 at 1.501 pe 4
+ES id 6 tid 6 eid 6 etid 6 c omnetpp::cMessage n nav-clear k 105 sm 5 st 1.001 am 5 at 1.501 pe 4
+
+E # 5 t 1.051 m 3 ce 2 msg 4
+DM id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n send-CTS k 103 m 3 pe 5
+- INFO: 
+- INFO: ========================================
+- INFO:   STEP 2/5 :  CTS (Clear To Send)
+- INFO:   B --[CTS]--> A + {D,F}
+- INFO:   Time = 1.051
+- INFO: ========================================
+- INFO: 
+BU id 3 txt "CTS (Clear To Send)"
+MDC id 3 d "b=,,,,#1a5c3a;t=Sending CTS,,#ffffff;is=l;p=465,240;i=device/laptop"
+MDC id 3 d "b=,,,,#8a5a00;t=Sending CTS,,#ffffff;is=l;p=465,240;i=device/laptop"
+- INFO: [B] Broadcasting CTS  bytes=50  gates=3
+CM id 7 tid 7 eid 7 etid 7 c omnetpp::cMessage n CTS k 2 pe -1
+BS id 7 tid 7 eid 7 etid 7 c omnetpp::cMessage n CTS k 2 m 3 pe 5
+SH sm 3 sg 1572864 pd 0.001
+ES id 7 tid 7 eid 7 etid 7 c omnetpp::cMessage n CTS k 2 sm 3 sg 1572864 st 1.051 am 2 ag 1048576 at 1.052 pe 5
+CL id 8 tid 7 eid 8 etid 7 c omnetpp::cMessage n CTS k 2 m 3 pe -1 cid 7
+CM id 8 tid 8 eid 8 etid 8 c omnetpp::cMessage n CTS k 2 pe -1
+BS id 8 tid 8 eid 8 etid 8 c omnetpp::cMessage n CTS k 2 m 3 pe 5
+SH sm 3 sg 1572865 pd 0.001
+ES id 8 tid 8 eid 8 etid 8 c omnetpp::cMessage n CTS k 2 sm 3 sg 1572865 st 1.051 am 6 ag 1048576 at 1.052 pe 5
+CL id 9 tid 8 eid 9 etid 8 c omnetpp::cMessage n CTS k 2 m 3 pe -1 cid 8
+CM id 9 tid 9 eid 9 etid 9 c omnetpp::cMessage n CTS k 2 pe -1
+BS id 9 tid 9 eid 9 etid 9 c omnetpp::cMessage n CTS k 2 m 3 pe 5
+SH sm 3 sg 1572866 pd 0.001
+ES id 9 tid 9 eid 9 etid 9 c omnetpp::cMessage n CTS k 2 sm 3 sg 1572866 st 1.051 am 7 ag 1048576 at 1.052 pe 5
+CL id 10 tid 9 eid 10 etid 9 c omnetpp::cMessage n CTS k 2 m 3 pe -1 cid 9
+
+E # 6 t 1.052 m 2 ce 5 msg 7
+- INFO: [A] RECV CTS from B  bytes=50
+DM id 7 tid 7 eid 7 etid 7 c omnetpp::cMessage n CTS k 2 m 2 pe 6
+- INFO: [A] CTS received → scheduling DS
+MDC id 2 d "b=,,,,#1a5c8a;t=Got CTS,,#ffffff;is=l;p=155,240;i=device/laptop"
+MDC id 2 d "b=,,,,#5a1a5c;t=Got CTS,,#ffffff;is=l;p=155,240;i=device/laptop"
+CM id 10 tid 10 eid 10 etid 10 c omnetpp::cMessage n send-DS k 101 pe -1
+BS id 10 tid 10 eid 10 etid 10 c omnetpp::cMessage n send-DS k 101 sm 2 st 1.052 am 2 at 1.102 pe 6
+ES id 10 tid 10 eid 10 etid 10 c omnetpp::cMessage n send-DS k 101 sm 2 st 1.052 am 2 at 1.102 pe 6
+
+E # 7 t 1.052 m 6 ce 5 msg 8
+- INFO: [D] RECV CTS from B  bytes=50
+DM id 8 tid 8 eid 8 etid 8 c omnetpp::cMessage n CTS k 2 m 6 pe 7
+- INFO: [D] NAV SET for 0.5s
+MDC id 6 d "b=,,,,#2d3d6a;t=NAV SET,,#ffffff;p=570,80;i=device/pc"
+MDC id 6 d "b=,,,,#c41414;t=NAV SET,,#ffffff;p=570,80;i=device/pc"
+CM id 11 tid 11 eid 11 etid 11 c omnetpp::cMessage n nav-clear k 105 pe -1
+BS id 11 tid 11 eid 11 etid 11 c omnetpp::cMessage n nav-clear k 105 sm 6 st 1.052 am 6 at 1.552 pe 7
+ES id 11 tid 11 eid 11 etid 11 c omnetpp::cMessage n nav-clear k 105 sm 6 st 1.052 am 6 at 1.552 pe 7
+
+E # 8 t 1.052 m 7 ce 5 msg 9
+- INFO: [F] RECV CTS from B  bytes=50
+DM id 9 tid 9 eid 9 etid 9 c omnetpp::cMessage n CTS k 2 m 7 pe 8
+- INFO: [F] NAV SET for 0.5s
+MDC id 7 d "b=,,,,#2d3d6a;t=NAV SET,,#ffffff;p=570,390;i=device/pc"
+MDC id 7 d "b=,,,,#c41414;t=NAV SET,,#ffffff;p=570,390;i=device/pc"
+CM id 12 tid 12 eid 12 etid 12 c omnetpp::cMessage n nav-clear k 105 pe -1
+BS id 12 tid 12 eid 12 etid 12 c omnetpp::cMessage n nav-clear k 105 sm 7 st 1.052 am 7 at 1.552 pe 8
+ES id 12 tid 12 eid 12 etid 12 c omnetpp::cMessage n nav-clear k 105 sm 7 st 1.052 am 7 at 1.552 pe 8
+
+E # 9 t 1.102 m 2 ce 6 msg 10
+DM id 10 tid 10 eid 10 etid 10 c omnetpp::cMessage n send-DS k 101 m 2 pe 9
+- INFO: 
+- INFO: ========================================
+- INFO:   STEP 3/5 :  DS (Data Sending notice)
+- INFO:   A --[DS]--> B + {C,E}
+- INFO:   Time = 1.102
+- INFO: ========================================
+- INFO: 
+BU id 2 txt "DS (Data Sending notice)"
+MDC id 2 d "b=,,,,#5a1a5c;t=Sending DS,,#ffffff;is=l;p=155,240;i=device/laptop"
+MDC id 2 d "b=,,,,#6e1aa0;t=Sending DS,,#ffffff;is=l;p=155,240;i=device/laptop"
+- INFO: [A] Broadcasting DS  bytes=30  gates=3
+CM id 13 tid 13 eid 13 etid 13 c omnetpp::cMessage n DS k 3 pe -1
+BS id 13 tid 13 eid 13 etid 13 c omnetpp::cMessage n DS k 3 m 2 pe 9
+SH sm 2 sg 1572864 pd 0.001
+ES id 13 tid 13 eid 13 etid 13 c omnetpp::cMessage n DS k 3 sm 2 sg 1572864 st 1.102 am 3 ag 1048576 at 1.103 pe 9
+CL id 14 tid 13 eid 14 etid 13 c omnetpp::cMessage n DS k 3 m 2 pe -1 cid 13
+CM id 14 tid 14 eid 14 etid 14 c omnetpp::cMessage n DS k 3 pe -1
+BS id 14 tid 14 eid 14 etid 14 c omnetpp::cMessage n DS k 3 m 2 pe 9
+SH sm 2 sg 1572865 pd 0.001
+ES id 14 tid 14 eid 14 etid 14 c omnetpp::cMessage n DS k 3 sm 2 sg 1572865 st 1.102 am 4 ag 1048576 at 1.103 pe 9
+CL id 15 tid 14 eid 15 etid 14 c omnetpp::cMessage n DS k 3 m 2 pe -1 cid 14
+CM id 15 tid 15 eid 15 etid 15 c omnetpp::cMessage n DS k 3 pe -1
+BS id 15 tid 15 eid 15 etid 15 c omnetpp::cMessage n DS k 3 m 2 pe 9
+SH sm 2 sg 1572866 pd 0.001
+ES id 15 tid 15 eid 15 etid 15 c omnetpp::cMessage n DS k 3 sm 2 sg 1572866 st 1.102 am 5 ag 1048576 at 1.103 pe 9
+CL id 16 tid 15 eid 16 etid 15 c omnetpp::cMessage n DS k 3 m 2 pe -1 cid 15
+CM id 16 tid 16 eid 16 etid 16 c omnetpp::cMessage n send-DATA k 102 pe -1
+BS id 16 tid 16 eid 16 etid 16 c omnetpp::cMessage n send-DATA k 102 sm 2 st 1.102 am 2 at 1.202 pe 9
+ES id 16 tid 16 eid 16 etid 16 c omnetpp::cMessage n send-DATA k 102 sm 2 st 1.102 am 2 at 1.202 pe 9
+
+E # 10 t 1.103 m 3 ce 9 msg 13
+- INFO: [B] RECV DS from A  bytes=30
+DM id 13 tid 13 eid 13 etid 13 c omnetpp::cMessage n DS k 3 m 3 pe 10
+
+E # 11 t 1.103 m 4 ce 9 msg 14
+- INFO: [C] RECV DS from A  bytes=30
+DM id 14 tid 14 eid 14 etid 14 c omnetpp::cMessage n DS k 3 m 4 pe 11
+
+E # 12 t 1.103 m 5 ce 9 msg 15
+- INFO: [E] RECV DS from A  bytes=30
+DM id 15 tid 15 eid 15 etid 15 c omnetpp::cMessage n DS k 3 m 5 pe 12
+
+E # 13 t 1.202 m 2 ce 9 msg 16
+DM id 16 tid 16 eid 16 etid 16 c omnetpp::cMessage n send-DATA k 102 m 2 pe 13
+- INFO: 
+- INFO: ========================================
+- INFO:   STEP 4/5 :  DATA (Payload)
+- INFO:   A --[DATA]--> B + {C,E}
+- INFO:   Time = 1.202
+- INFO: ========================================
+- INFO: 
+BU id 2 txt "DATA (Payload)"
+MDC id 2 d "b=,,,,#6e1aa0;t=Sending DATA,,#ffffff;is=l;p=155,240;i=device/laptop"
+MDC id 2 d "b=,,,,#0a6e28;t=Sending DATA,,#ffffff;is=l;p=155,240;i=device/laptop"
+- INFO: [A] Broadcasting DATA  bytes=1000  gates=3
+CM id 17 tid 17 eid 17 etid 17 c omnetpp::cMessage n DATA k 4 pe -1
+BS id 17 tid 17 eid 17 etid 17 c omnetpp::cMessage n DATA k 4 m 2 pe 13
+SH sm 2 sg 1572864 pd 0.001
+ES id 17 tid 17 eid 17 etid 17 c omnetpp::cMessage n DATA k 4 sm 2 sg 1572864 st 1.202 am 3 ag 1048576 at 1.203 pe 13
+CL id 18 tid 17 eid 18 etid 17 c omnetpp::cMessage n DATA k 4 m 2 pe -1 cid 17
+CM id 18 tid 18 eid 18 etid 18 c omnetpp::cMessage n DATA k 4 pe -1
+BS id 18 tid 18 eid 18 etid 18 c omnetpp::cMessage n DATA k 4 m 2 pe 13
+SH sm 2 sg 1572865 pd 0.001
+ES id 18 tid 18 eid 18 etid 18 c omnetpp::cMessage n DATA k 4 sm 2 sg 1572865 st 1.202 am 4 ag 1048576 at 1.203 pe 13
+CL id 19 tid 18 eid 19 etid 18 c omnetpp::cMessage n DATA k 4 m 2 pe -1 cid 18
+CM id 19 tid 19 eid 19 etid 19 c omnetpp::cMessage n DATA k 4 pe -1
+BS id 19 tid 19 eid 19 etid 19 c omnetpp::cMessage n DATA k 4 m 2 pe 13
+SH sm 2 sg 1572866 pd 0.001
+ES id 19 tid 19 eid 19 etid 19 c omnetpp::cMessage n DATA k 4 sm 2 sg 1572866 st 1.202 am 5 ag 1048576 at 1.203 pe 13
+CL id 20 tid 19 eid 20 etid 19 c omnetpp::cMessage n DATA k 4 m 2 pe -1 cid 19
+
+E # 14 t 1.203 m 3 ce 13 msg 17
+- INFO: [B] RECV DATA from A  bytes=1000
+DM id 17 tid 17 eid 17 etid 17 c omnetpp::cMessage n DATA k 4 m 3 pe 14
+- INFO: [B] DATA received → scheduling ACK
+MDC id 3 d "b=,,,,#8a5a00;t=Got DATA,,#ffffff;is=l;p=465,240;i=device/laptop"
+MDC id 3 d "b=,,,,#1a5c3a;t=Got DATA,,#ffffff;is=l;p=465,240;i=device/laptop"
+CM id 20 tid 20 eid 20 etid 20 c omnetpp::cMessage n send-ACK k 104 pe -1
+BS id 20 tid 20 eid 20 etid 20 c omnetpp::cMessage n send-ACK k 104 sm 3 st 1.203 am 3 at 1.253 pe 14
+ES id 20 tid 20 eid 20 etid 20 c omnetpp::cMessage n send-ACK k 104 sm 3 st 1.203 am 3 at 1.253 pe 14
+
+E # 15 t 1.203 m 4 ce 13 msg 18
+- INFO: [C] RECV DATA from A  bytes=1000
+DM id 18 tid 18 eid 18 etid 18 c omnetpp::cMessage n DATA k 4 m 4 pe 15
+
+E # 16 t 1.203 m 5 ce 13 msg 19
+- INFO: [E] RECV DATA from A  bytes=1000
+DM id 19 tid 19 eid 19 etid 19 c omnetpp::cMessage n DATA k 4 m 5 pe 16
+
+E # 17 t 1.253 m 3 ce 14 msg 20
+DM id 20 tid 20 eid 20 etid 20 c omnetpp::cMessage n send-ACK k 104 m 3 pe 17
+- INFO: 
+- INFO: ========================================
+- INFO:   STEP 5/5 :  ACK (Acknowledgement)
+- INFO:   B --[ACK]--> A + {D,F}
+- INFO:   Time = 1.253
+- INFO: ========================================
+- INFO: 
+BU id 3 txt "ACK (Acknowledgement)"
+MDC id 3 d "b=,,,,#1a5c3a;t=Sending ACK,,#ffffff;is=l;p=465,240;i=device/laptop"
+MDC id 3 d "b=,,,,#8a0a0a;t=Sending ACK,,#ffffff;is=l;p=465,240;i=device/laptop"
+- INFO: [B] Broadcasting ACK  bytes=30  gates=3
+CM id 21 tid 21 eid 21 etid 21 c omnetpp::cMessage n ACK k 5 pe -1
+BS id 21 tid 21 eid 21 etid 21 c omnetpp::cMessage n ACK k 5 m 3 pe 17
+SH sm 3 sg 1572864 pd 0.001
+ES id 21 tid 21 eid 21 etid 21 c omnetpp::cMessage n ACK k 5 sm 3 sg 1572864 st 1.253 am 2 ag 1048576 at 1.254 pe 17
+CL id 22 tid 21 eid 22 etid 21 c omnetpp::cMessage n ACK k 5 m 3 pe -1 cid 21
+CM id 22 tid 22 eid 22 etid 22 c omnetpp::cMessage n ACK k 5 pe -1
+BS id 22 tid 22 eid 22 etid 22 c omnetpp::cMessage n ACK k 5 m 3 pe 17
+SH sm 3 sg 1572865 pd 0.001
+ES id 22 tid 22 eid 22 etid 22 c omnetpp::cMessage n ACK k 5 sm 3 sg 1572865 st 1.253 am 6 ag 1048576 at 1.254 pe 17
+CL id 23 tid 22 eid 23 etid 22 c omnetpp::cMessage n ACK k 5 m 3 pe -1 cid 22
+CM id 23 tid 23 eid 23 etid 23 c omnetpp::cMessage n ACK k 5 pe -1
+BS id 23 tid 23 eid 23 etid 23 c omnetpp::cMessage n ACK k 5 m 3 pe 17
+SH sm 3 sg 1572866 pd 0.001
+ES id 23 tid 23 eid 23 etid 23 c omnetpp::cMessage n ACK k 5 sm 3 sg 1572866 st 1.253 am 7 ag 1048576 at 1.254 pe 17
+CL id 24 tid 23 eid 24 etid 23 c omnetpp::cMessage n ACK k 5 m 3 pe -1 cid 23
+
+SE e 0 c 10 m "The user has finished the simulation -- at t=1.253493516624s, event #17"

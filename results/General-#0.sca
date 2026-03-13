@@ -1,8 +1,8 @@
 version 3
-run General-0-20260312-07:06:13-200699
+run General-0-20260313-06:13:07-12733
 attr configname General
-attr datetime 20260312-07:06:13
-attr datetimef 20260312-070613
+attr datetime 20260313-06:13:07
+attr datetimef 20260313-061307
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
@@ -10,7 +10,7 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network MacawNetwork
-attr processid 200699
+attr processid 12733
 attr repetition 0
 attr replication #0
 attr resultdir results

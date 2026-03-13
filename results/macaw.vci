@@ -1,0 +1,59 @@
+file 1715 1773363314                                            
+version 3
+run SlowAnim-0-20260313-06:24:26-53409
+attr configname SlowAnim
+attr datetime 20260313-06:24:26
+attr datetimef 20260313-062426
+attr experiment SlowAnim
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network MacawNetwork
+attr processid 53409
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config **.animationSpeed 0.2
+config network MacawNetwork
+config sim-time-limit 10s
+config record-eventlog true
+config **.vector-recording true
+config output-scalar-file results/macaw.sca
+config output-vector-file results/macaw.vec
+config **.animationSpeed 1
+config **.channel.datarate 1Mbps
+config **.channel.delay 1ms
+config **.channel.ber 0
+config *.A.role "\"sender\""
+config *.B.role "\"receiver\""
+config *.C.role "\"neighbor\""
+config *.E.role "\"neighbor\""
+config *.D.role "\"neighbor\""
+config *.F.role "\"neighbor\""
+config *.*.navDuration 0.5s
+config *.A.dataBytes 1000
+config *.B.dataBytes 1000
+config **.cmdenv-log-level info
+
+vector 0 MacawNetwork.A TX-bytes ETV
+0	1092 27 1 1 1 1 3 50 50 150 7500
+vector 1 MacawNetwork.B RX-bytes ETV
+vector 2 MacawNetwork.C RX-bytes ETV
+vector 3 MacawNetwork.E RX-bytes ETV
+vector 4 MacawNetwork.B TX-bytes ETV
+vector 5 MacawNetwork.A RX-bytes ETV
+vector 6 MacawNetwork.D RX-bytes ETV
+vector 7 MacawNetwork.F RX-bytes ETV
+0	1378 87 9 13 1.102 1.202 6 30 1000 3090 3002700
+1	1465 43 2 14 1.001 1.203 3 30 1000 1080 1003400
+2	1508 43 3 15 1.001 1.203 3 30 1000 1080 1003400
+3	1551 43 4 16 1.001 1.203 3 30 1000 1080 1003400
+4	1594 81 5 17 1.051 1.253 6 30 50 240 10200
+5	1675 13 6 6 1.052 1.052 1 50 50 50 2500
+6	1688 13 7 7 1.052 1.052 1 50 50 50 2500
+7	1701 13 8 8 1.052 1.052 1 50 50 50 2500
+

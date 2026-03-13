@@ -1,0 +1,202 @@
+version 3
+run SlowAnim-0-20260313-06:24:26-53409
+attr configname SlowAnim
+attr datetime 20260313-06:24:26
+attr datetimef 20260313-062426
+attr experiment SlowAnim
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network MacawNetwork
+attr processid 53409
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config **.animationSpeed 0.2
+config network MacawNetwork
+config sim-time-limit 10s
+config record-eventlog true
+config **.vector-recording true
+config output-scalar-file results/macaw.sca
+config output-vector-file results/macaw.vec
+config **.animationSpeed 1
+config **.channel.datarate 1Mbps
+config **.channel.delay 1ms
+config **.channel.ber 0
+config *.A.role "\"sender\""
+config *.B.role "\"receiver\""
+config *.C.role "\"neighbor\""
+config *.E.role "\"neighbor\""
+config *.D.role "\"neighbor\""
+config *.F.role "\"neighbor\""
+config *.*.navDuration 0.5s
+config *.A.dataBytes 1000
+config *.B.dataBytes 1000
+config **.cmdenv-log-level info
+
+par MacawNetwork.A.wireless$o[0].channel typename "\"WirelessChannel\""
+par MacawNetwork.A.wireless$o[0].channel disabled false
+attr mutable ""
+par MacawNetwork.A.wireless$o[0].channel delay 0.001s
+attr mutable ""
+attr unit s
+par MacawNetwork.A.wireless$o[0].channel datarate 1e+06bps
+attr mutable ""
+attr unit bps
+par MacawNetwork.A.wireless$o[0].channel ber 0
+attr mutable ""
+par MacawNetwork.A.wireless$o[0].channel per 0
+attr mutable ""
+par MacawNetwork.B.wireless$o[0].channel typename "\"WirelessChannel\""
+par MacawNetwork.B.wireless$o[0].channel disabled false
+attr mutable ""
+par MacawNetwork.B.wireless$o[0].channel delay 0.001s
+attr mutable ""
+attr unit s
+par MacawNetwork.B.wireless$o[0].channel datarate 1e+06bps
+attr mutable ""
+attr unit bps
+par MacawNetwork.B.wireless$o[0].channel ber 0
+attr mutable ""
+par MacawNetwork.B.wireless$o[0].channel per 0
+attr mutable ""
+par MacawNetwork.A.wireless$o[1].channel typename "\"WirelessChannel\""
+par MacawNetwork.A.wireless$o[1].channel disabled false
+attr mutable ""
+par MacawNetwork.A.wireless$o[1].channel delay 0.001s
+attr mutable ""
+attr unit s
+par MacawNetwork.A.wireless$o[1].channel datarate 1e+06bps
+attr mutable ""
+attr unit bps
+par MacawNetwork.A.wireless$o[1].channel ber 0
+attr mutable ""
+par MacawNetwork.A.wireless$o[1].channel per 0
+attr mutable ""
+par MacawNetwork.C.wireless$o[0].channel typename "\"WirelessChannel\""
+par MacawNetwork.C.wireless$o[0].channel disabled false
+attr mutable ""
+par MacawNetwork.C.wireless$o[0].channel delay 0.001s
+attr mutable ""
+attr unit s
+par MacawNetwork.C.wireless$o[0].channel datarate 1e+06bps
+attr mutable ""
+attr unit bps
+par MacawNetwork.C.wireless$o[0].channel ber 0
+attr mutable ""
+par MacawNetwork.C.wireless$o[0].channel per 0
+attr mutable ""
+par MacawNetwork.A.wireless$o[2].channel typename "\"WirelessChannel\""
+par MacawNetwork.A.wireless$o[2].channel disabled false
+attr mutable ""
+par MacawNetwork.A.wireless$o[2].channel delay 0.001s
+attr mutable ""
+attr unit s
+par MacawNetwork.A.wireless$o[2].channel datarate 1e+06bps
+attr mutable ""
+attr unit bps
+par MacawNetwork.A.wireless$o[2].channel ber 0
+attr mutable ""
+par MacawNetwork.A.wireless$o[2].channel per 0
+attr mutable ""
+par MacawNetwork.E.wireless$o[0].channel typename "\"WirelessChannel\""
+par MacawNetwork.E.wireless$o[0].channel disabled false
+attr mutable ""
+par MacawNetwork.E.wireless$o[0].channel delay 0.001s
+attr mutable ""
+attr unit s
+par MacawNetwork.E.wireless$o[0].channel datarate 1e+06bps
+attr mutable ""
+attr unit bps
+par MacawNetwork.E.wireless$o[0].channel ber 0
+attr mutable ""
+par MacawNetwork.E.wireless$o[0].channel per 0
+attr mutable ""
+par MacawNetwork.B.wireless$o[1].channel typename "\"WirelessChannel\""
+par MacawNetwork.B.wireless$o[1].channel disabled false
+attr mutable ""
+par MacawNetwork.B.wireless$o[1].channel delay 0.001s
+attr mutable ""
+attr unit s
+par MacawNetwork.B.wireless$o[1].channel datarate 1e+06bps
+attr mutable ""
+attr unit bps
+par MacawNetwork.B.wireless$o[1].channel ber 0
+attr mutable ""
+par MacawNetwork.B.wireless$o[1].channel per 0
+attr mutable ""
+par MacawNetwork.D.wireless$o[0].channel typename "\"WirelessChannel\""
+par MacawNetwork.D.wireless$o[0].channel disabled false
+attr mutable ""
+par MacawNetwork.D.wireless$o[0].channel delay 0.001s
+attr mutable ""
+attr unit s
+par MacawNetwork.D.wireless$o[0].channel datarate 1e+06bps
+attr mutable ""
+attr unit bps
+par MacawNetwork.D.wireless$o[0].channel ber 0
+attr mutable ""
+par MacawNetwork.D.wireless$o[0].channel per 0
+attr mutable ""
+par MacawNetwork.B.wireless$o[2].channel typename "\"WirelessChannel\""
+par MacawNetwork.B.wireless$o[2].channel disabled false
+attr mutable ""
+par MacawNetwork.B.wireless$o[2].channel delay 0.001s
+attr mutable ""
+attr unit s
+par MacawNetwork.B.wireless$o[2].channel datarate 1e+06bps
+attr mutable ""
+attr unit bps
+par MacawNetwork.B.wireless$o[2].channel ber 0
+attr mutable ""
+par MacawNetwork.B.wireless$o[2].channel per 0
+attr mutable ""
+par MacawNetwork.F.wireless$o[0].channel typename "\"WirelessChannel\""
+par MacawNetwork.F.wireless$o[0].channel disabled false
+attr mutable ""
+par MacawNetwork.F.wireless$o[0].channel delay 0.001s
+attr mutable ""
+attr unit s
+par MacawNetwork.F.wireless$o[0].channel datarate 1e+06bps
+attr mutable ""
+attr unit bps
+par MacawNetwork.F.wireless$o[0].channel ber 0
+attr mutable ""
+par MacawNetwork.F.wireless$o[0].channel per 0
+attr mutable ""
+par MacawNetwork.A typename "\"MacawNode\""
+par MacawNetwork.A role "\"sender\""
+par MacawNetwork.A navDuration 0.5s
+attr unit s
+par MacawNetwork.A dataBytes 1000
+par MacawNetwork.B typename "\"MacawNode\""
+par MacawNetwork.B role "\"receiver\""
+par MacawNetwork.B navDuration 0.5s
+attr unit s
+par MacawNetwork.B dataBytes 1000
+par MacawNetwork.C typename "\"MacawNode\""
+par MacawNetwork.C role "\"neighbor\""
+par MacawNetwork.C navDuration 0.5s
+attr unit s
+par MacawNetwork.C dataBytes 1000
+par MacawNetwork.E typename "\"MacawNode\""
+par MacawNetwork.E role "\"neighbor\""
+par MacawNetwork.E navDuration 0.5s
+attr unit s
+par MacawNetwork.E dataBytes 1000
+par MacawNetwork.D typename "\"MacawNode\""
+par MacawNetwork.D role "\"neighbor\""
+par MacawNetwork.D navDuration 0.5s
+attr unit s
+par MacawNetwork.D dataBytes 1000
+par MacawNetwork.F typename "\"MacawNode\""
+par MacawNetwork.F role "\"neighbor\""
+par MacawNetwork.F navDuration 0.5s
+attr unit s
+par MacawNetwork.F dataBytes 1000
+par MacawNetwork typename "\"MacawNetwork\""
+
